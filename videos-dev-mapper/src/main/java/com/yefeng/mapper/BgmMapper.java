@@ -2,6 +2,8 @@ package com.yefeng.mapper;
 
 import com.yefeng.pojo.Bgm;
 
+import java.util.List;
+
 public interface BgmMapper {
     int deleteByPrimaryKey(String id);
 
@@ -14,4 +16,6 @@ public interface BgmMapper {
     int updateByPrimaryKeySelective(Bgm record);
 
     int updateByPrimaryKey(Bgm record);
+
+    List<Bgm> queryBgmList();
 }

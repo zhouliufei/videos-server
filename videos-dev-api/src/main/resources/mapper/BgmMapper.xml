@@ -13,7 +13,7 @@
     id, author, name, path
   </sql>
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
-    select 
+    select
     <include refid="Base_Column_List" />
     from bgm
     where id = #{id,jdbcType=VARCHAR}
@@ -23,9 +23,9 @@
     where id = #{id,jdbcType=VARCHAR}
   </delete>
   <insert id="insert" parameterType="com.yefeng.pojo.Bgm" >
-    insert into bgm (id, author, name, 
+    insert into bgm (id, author, name,
       path)
-    values (#{id,jdbcType=VARCHAR}, #{author,jdbcType=VARCHAR}, #{name,jdbcType=VARCHAR}, 
+    values (#{id,jdbcType=VARCHAR}, #{author,jdbcType=VARCHAR}, #{name,jdbcType=VARCHAR},
       #{path,jdbcType=VARCHAR})
   </insert>
   <insert id="insertSelective" parameterType="com.yefeng.pojo.Bgm" >
@@ -81,4 +81,9 @@
       path = #{path,jdbcType=VARCHAR}
     where id = #{id,jdbcType=VARCHAR}
   </update>
+  <select id="queryBgmList" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from bgm
+  </select>
 </mapper>

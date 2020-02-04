@@ -22,4 +22,6 @@ public interface UserMapper {
 
     User getUser(@Param("username") String username,
                  @Param("password") String password);
+
+    String queryFaceUrl(String userId);
 }

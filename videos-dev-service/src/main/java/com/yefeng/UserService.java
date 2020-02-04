@@ -10,4 +10,10 @@ public interface UserService {
     public boolean queryUserNameIsExist(String username);
 
     public JsonResult login(String username, String password);
+
+    boolean logout(String userId) throws Exception;
+
+    int updateUserInfo(User user);
+
+    User queryUserInfo(String userId);
 }

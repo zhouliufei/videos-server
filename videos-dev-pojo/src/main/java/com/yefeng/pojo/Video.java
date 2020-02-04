@@ -1,22 +1,26 @@
 package com.yefeng.pojo;
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+
 import java.util.Date;
 
+@ApiModel(value = "视频基础信息对象",description = "这是视频基础信息对象")
 public class Video {
     private String id;
-
+    @ApiModelProperty(value = "用户ID",name = "userId",required = true)
     private String userId;
-
+    @ApiModelProperty(value = "背景音乐Id",name = "audioId")
     private String audioId;
-
+    @ApiModelProperty(value = "视频描述",name = "videoDesc",required = true)
     private String videoDesc;
 
     private String videoPath;
-
+    @ApiModelProperty(value = "视频时长",name = "videoSeconds",required = true)
     private Float videoSeconds;
-
+    @ApiModelProperty(value = "视频宽度",name = "videoWidth",required = true)
     private Integer videoWidth;
-
+    @ApiModelProperty(value = "视频长度",name = "videoHeight",required = true)
     private Integer videoHeight;
 
     private String coverPath;

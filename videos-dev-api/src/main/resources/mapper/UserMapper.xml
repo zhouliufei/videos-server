@@ -17,7 +17,7 @@
     id, username, password, face_image, nickname, fans_counts, follow_counts, receive_like_counts
   </sql>
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
-    select 
+    select
     <include refid="Base_Column_List" />
     from users
     where id = #{id,jdbcType=VARCHAR}
@@ -27,11 +27,11 @@
     where id = #{id,jdbcType=VARCHAR}
   </delete>
   <insert id="insert" parameterType="com.yefeng.pojo.User" >
-    insert into users (id, username, password, 
-      face_image, nickname, fans_counts, 
+    insert into users (id, username, password,
+      face_image, nickname, fans_counts,
       follow_counts, receive_like_counts)
-    values (#{id,jdbcType=VARCHAR}, #{username,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}, 
-      #{faceImage,jdbcType=VARCHAR}, #{nickname,jdbcType=VARCHAR}, #{fansCounts,jdbcType=INTEGER}, 
+    values (#{id,jdbcType=VARCHAR}, #{username,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR},
+      #{faceImage,jdbcType=VARCHAR}, #{nickname,jdbcType=VARCHAR}, #{fansCounts,jdbcType=INTEGER},
       #{followCounts,jdbcType=INTEGER}, #{receiveLikeCounts,jdbcType=INTEGER})
   </insert>
   <insert id="insertSelective" parameterType="com.yefeng.pojo.User" >
@@ -136,5 +136,11 @@
     from users
     where username = #{username,jdbcType=VARCHAR}
     and password = #{password,jdbcType=VARCHAR}
+  </select>
+  <select id="queryFaceUrl" parameterType="java.lang.String"
+          resultType="java.lang.String">
+    select face_image
+    from users
+    where id = #{userId}
   </select>
 </mapper>

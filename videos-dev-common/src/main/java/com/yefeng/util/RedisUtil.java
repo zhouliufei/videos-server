@@ -18,18 +18,17 @@ public class RedisUtil {
 
     private static Logger logger = Logger.getLogger(RedisUtil.class);
     //存数据
-    public void set(String key,Integer expire,String value) {
+    public void set(String key,Integer expire,String value) throws Exception {
         Jedis jedis = null;
         try{
             jedis = jedisPool.getResource();
             if(expire == null) {
-                jedis.setex(TOKEN_PREFIX + key,EXPIRE,value);
+                jedis.setex(TOKEN_PREFIX +":"+ key,EXPIRE,value);
             } else {
-                jedis.setex(TOKEN_PREFIX + key,expire,value);
+                jedis.setex(TOKEN_PREFIX +":"+ key,expire,value);
             }
         }catch (Exception e) {
-            logger.info("新增redis数据出错");
-            e.printStackTrace();
+            throw new Exception("新增redis数据出错");
         } finally {
             if(jedis != null) {
                 jedis.close();
@@ -37,15 +36,14 @@ public class RedisUtil {
         }
     }
     //取数据
-    public String get(String key) {
+    public String get(String key) throws Exception {
         Jedis jedis = null;
         String value = null;
         try{
             jedis = jedisPool.getResource();
-            value = jedis.get(TOKEN_PREFIX + key);
+            value = jedis.get(TOKEN_PREFIX +":"+ key);
         } catch (Exception e) {
-            logger.info("获取redis数据出错");
-            e.printStackTrace();
+            throw new Exception("获取redis数据出错");
         } finally {
             if(jedis != null) {
                 jedis.close();
@@ -54,14 +52,13 @@ public class RedisUtil {
         return value;
     }
     //删除数据
-    public void delete(String key) {
+    public void delete(String key) throws Exception {
         Jedis jedis = null;
         try{
             jedis = jedisPool.getResource();
-            jedis.del(key);
+            jedis.del(TOKEN_PREFIX +":"+ key);
         } catch (Exception e) {
-            logger.info("删除redis数据出错");
-            e.printStackTrace();
+            throw new Exception("删除redis数据出错");
         } finally {
             if(jedis != null) {
                 jedis.close();
@@ -69,14 +66,13 @@ public class RedisUtil {
         }
     }
 
-    public void expireTime(String key) {
+    public void expireTime(String key) throws Exception {
         Jedis jedis = null;
         try{
             jedis = jedisPool.getResource();
-            jedis.expire(key,EXPIRE);
+            jedis.expire(TOKEN_PREFIX +":"+ key,EXPIRE);
         }catch (Exception e) {
-            logger.info("更新redis数据出错");
-            e.printStackTrace();
+            throw new Exception("刷新redis过期时间出错");
         }finally {
             if(jedis != null) {
                 jedis.close();

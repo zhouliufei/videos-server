@@ -27,7 +27,11 @@ public class JsonResult {
     }
 
     public static JsonResult ok(Object object) {
-        return new JsonResult(object);
+        return new JsonResult(null,object,200);
+    }
+
+    public static JsonResult sentMessage(String msg) {
+        return new JsonResult(msg,null,200);
     }
 
     public static JsonResult errorMessage(String msg) {
@@ -39,7 +43,7 @@ public class JsonResult {
     }
 
     public static JsonResult errorTokenMsg(String msg) {
-        return new JsonResult(msg,null,502);
+        return new JsonResult(msg,null,500);
     }
 
     public JsonResult() {}

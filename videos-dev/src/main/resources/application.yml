@@ -23,7 +23,13 @@ jedis:
     maxIdle: 10
     maxWaitMillis: 100000
 
-
 logging:
   level: warn
+multipart:
+  max-request-size: 100MB
+  max-file-size: 20MB
 
+fileUpload:
+  filePath: E:/video-file
+
+ffmpegPath: D:/FFmpeg/ffmpeg/bin/ffmpeg.exe
