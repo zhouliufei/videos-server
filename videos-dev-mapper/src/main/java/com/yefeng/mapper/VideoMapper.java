@@ -1,6 +1,7 @@
 package com.yefeng.mapper;
 
 import com.yefeng.pojo.Video;
+import org.apache.ibatis.annotations.Param;
 
 public interface VideoMapper {
     int deleteByPrimaryKey(String id);
@@ -14,4 +15,9 @@ public interface VideoMapper {
     int updateByPrimaryKeySelective(Video record);
 
     int updateByPrimaryKey(Video record);
+
+    String queryCoverPath(String videoId);
+
+    void updateCoverPath(@Param("videoId") String videoId,
+                         @Param("coverPath") String uploadDB);
 }

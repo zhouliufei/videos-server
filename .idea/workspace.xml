@@ -2,40 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4903058e-d7b8-4225-a8e6-37d21265dffc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/videos-dev-common/src/main/java/com/yefeng/util/FFMpegUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/videos-dev-service/src/main/java/com/yefeng/BgmService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/videos-dev-service/src/main/java/com/yefeng/MultiFileService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/videos-dev-service/src/main/java/com/yefeng/impl/BgmServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/videos-dev-service/src/main/java/com/yefeng/impl/MultiFileServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/videos-dev/src/main/java/com/yefeng/controller/BgmController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/videos-dev/src/main/java/com/yefeng/controller/RegistLoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/videos-dev/src/main/java/com/yefeng/controller/VideoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/videos-dev-pojo/src/main/java/com/yefeng/dto/ConverInputDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/videos-dev-api/src/main/resources/mapper/BgmMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/videos-dev-api/src/main/resources/mapper/BgmMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/videos-dev-api/src/main/resources/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/videos-dev-api/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/videos-dev-common/src/main/java/com/yefeng/util/JsonResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/videos-dev-common/src/main/java/com/yefeng/util/JsonResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/videos-dev-common/src/main/java/com/yefeng/util/RedisUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/videos-dev-common/src/main/java/com/yefeng/util/RedisUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/videos-dev-common/target/classes/com/yefeng/util/JsonResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/videos-dev-common/target/classes/com/yefeng/util/JsonResult.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/videos-dev-common/target/classes/com/yefeng/util/RedisUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/videos-dev-common/target/classes/com/yefeng/util/RedisUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/videos-dev-mapper/src/main/java/com/yefeng/mapper/BgmMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/videos-dev-mapper/src/main/java/com/yefeng/mapper/BgmMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/videos-dev-mapper/src/main/java/com/yefeng/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/videos-dev-mapper/src/main/java/com/yefeng/mapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/videos-dev-mapper/target/classes/com/yefeng/mapper/BgmMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/videos-dev-mapper/target/classes/com/yefeng/mapper/BgmMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/videos-dev-mapper/target/classes/com/yefeng/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/videos-dev-mapper/target/classes/com/yefeng/mapper/UserMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/videos-dev-pojo/src/main/java/com/yefeng/pojo/Video.java" beforeDir="false" afterPath="$PROJECT_DIR$/videos-dev-pojo/src/main/java/com/yefeng/pojo/Video.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/videos-dev-pojo/target/classes/com/yefeng/pojo/Video.class" beforeDir="false" afterPath="$PROJECT_DIR$/videos-dev-pojo/target/classes/com/yefeng/pojo/Video.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/videos-dev-service/src/main/java/com/yefeng/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/videos-dev-service/src/main/java/com/yefeng/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/videos-dev-service/src/main/java/com/yefeng/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/videos-dev-service/src/main/java/com/yefeng/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/videos-dev-service/target/classes/com/yefeng/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/videos-dev-service/target/classes/com/yefeng/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/videos-dev-service/target/classes/com/yefeng/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/videos-dev-service/target/classes/com/yefeng/impl/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/videos-dev/src/main/java/com/yefeng/InterceptorConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/videos-dev/src/main/java/com/yefeng/InterceptorConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/videos-dev/src/main/java/com/yefeng/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/videos-dev/src/main/java/com/yefeng/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/videos-dev/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/videos-dev/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/videos-dev/target/classes/META-INF/videos-dev.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/videos-dev/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/videos-dev/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/videos-dev/target/classes/com/yefeng/InterceptorConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/videos-dev/target/classes/com/yefeng/InterceptorConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/videos-dev/target/classes/com/yefeng/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/videos-dev/target/classes/com/yefeng/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/videos-dev-api/src/main/resources/mapper/VideoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/videos-dev-api/src/main/resources/mapper/VideoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/videos-dev-common/src/main/java/com/yefeng/util/FFMpegUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/videos-dev-common/src/main/java/com/yefeng/util/FFMpegUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/videos-dev-mapper/src/main/java/com/yefeng/mapper/VideoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/videos-dev-mapper/src/main/java/com/yefeng/mapper/VideoMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/videos-dev-mapper/target/classes/com/yefeng/mapper/VideoMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/videos-dev-mapper/target/classes/com/yefeng/mapper/VideoMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/videos-dev-pojo/src/main/java/com/yefeng/dto/UserTokenDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/videos-dev-pojo/src/main/java/com/yefeng/dto/UserTokenDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/videos-dev-service/src/main/java/com/yefeng/MultiFileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/videos-dev-service/src/main/java/com/yefeng/MultiFileService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/videos-dev-service/src/main/java/com/yefeng/impl/MultiFileServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/videos-dev-service/src/main/java/com/yefeng/impl/MultiFileServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/videos-dev/src/main/java/com/yefeng/controller/VideoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/videos-dev/src/main/java/com/yefeng/controller/VideoController.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -56,7 +32,7 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -88,6 +64,8 @@
       <find>queryFaceUrl</find>
       <find>insertSelective</find>
       <find>-c:v copy</find>
+      <find>queryCoverPath</find>
+      <find>updateCoverPath</find>
     </findStrings>
     <replaceStrings>
       <replace>com.yefeng.SearchRecord</replace>
@@ -105,10 +83,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/videos-dev-api/src/main/resources/mapper/UserFanMapper.xml" />
-        <option value="$PROJECT_DIR$/videos-dev-api/src/main/resources/mapper/UserLikeVideoMapper.xml" />
         <option value="$PROJECT_DIR$/videos-dev-api/src/main/resources/mapper/UserReportMapper.xml" />
-        <option value="$PROJECT_DIR$/videos-dev-api/src/main/resources/mapper/VideoMapper.xml" />
         <option value="$PROJECT_DIR$/videos-dev-common/src/main/java/com/yefeng/util/MD5Util.java" />
         <option value="$PROJECT_DIR$/videos-dev-common/src/main/java/com/yefeng/util/StringUtil.java" />
         <option value="$PROJECT_DIR$/videos-dev-service/pom.xml" />
@@ -131,13 +106,11 @@
         <option value="$PROJECT_DIR$/videos-dev/src/main/java/com/yefeng/Swagger2.java" />
         <option value="$PROJECT_DIR$/videos-dev/src/main/java/com/yefeng/RedisConfigration.java" />
         <option value="$PROJECT_DIR$/videos-dev/src/main/java/com/yefeng/annotation/LoginUser.java" />
-        <option value="$PROJECT_DIR$/videos-dev-pojo/src/main/java/com/yefeng/dto/UserTokenDTO.java" />
         <option value="$PROJECT_DIR$/videos-dev/src/main/java/com/yefeng/UserLoginThreadLocal.java" />
         <option value="$PROJECT_DIR$/videos-dev/src/main/java/com/yefeng/resolver/UserLoginArgumentResolver.java" />
         <option value="$PROJECT_DIR$/videos-dev/src/main/java/com/yefeng/interceptor/TokenInterceptor.java" />
         <option value="$PROJECT_DIR$/videos-dev-common/src/main/java/com/yefeng/util/RedisUtil.java" />
         <option value="$PROJECT_DIR$/videos-dev-common/src/main/java/com/yefeng/util/JsonResult.java" />
-        <option value="$PROJECT_DIR$/videos-dev/src/main/java/com/yefeng/InterceptorConfig.java" />
         <option value="$PROJECT_DIR$/videos-dev-service/src/main/java/com/yefeng/UserService.java" />
         <option value="$PROJECT_DIR$/videos-dev-service/src/main/java/com/yefeng/impl/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/videos-dev-mapper/src/main/java/com/yefeng/mapper/UserMapper.java" />
@@ -146,16 +119,21 @@
         <option value="$PROJECT_DIR$/videos-dev-mapper/src/main/java/com/yefeng/mapper/BgmMapper.java" />
         <option value="$PROJECT_DIR$/videos-dev-api/src/main/resources/mapper/BgmMapper.xml" />
         <option value="$PROJECT_DIR$/videos-dev/src/main/java/com/yefeng/controller/BigController.java" />
-        <option value="$PROJECT_DIR$/videos-dev-service/src/main/java/com/yefeng/MultiFileService.java" />
         <option value="$PROJECT_DIR$/videos-dev-pojo/src/main/java/com/yefeng/dto/VideoBasicInputDTO.java" />
         <option value="$PROJECT_DIR$/videos-dev-pojo/src/main/java/com/yefeng/pojo/Video.java" />
         <option value="$PROJECT_DIR$/videos-dev/src/main/java/com/yefeng/controller/BgmController.java" />
         <option value="$PROJECT_DIR$/videos-dev/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/videos-dev-service/src/main/java/com/yefeng/BgmService.java" />
         <option value="$PROJECT_DIR$/videos-dev-service/src/main/java/com/yefeng/impl/BgmServiceImpl.java" />
-        <option value="$PROJECT_DIR$/videos-dev-common/src/main/java/com/yefeng/util/FFMpegUtil.java" />
-        <option value="$PROJECT_DIR$/videos-dev-service/src/main/java/com/yefeng/impl/MultiFileServiceImpl.java" />
+        <option value="$PROJECT_DIR$/videos-dev-pojo/src/main/java/com/yefeng/dto/ConverInputDTO.java" />
+        <option value="$PROJECT_DIR$/videos-dev-pojo/src/main/java/com/yefeng/dto/UserTokenDTO.java" />
+        <option value="$PROJECT_DIR$/videos-dev-service/src/main/java/com/yefeng/MultiFileService.java" />
+        <option value="$PROJECT_DIR$/videos-dev-api/src/main/resources/mapper/VideoMapper.xml" />
         <option value="$PROJECT_DIR$/videos-dev/src/main/java/com/yefeng/controller/VideoController.java" />
+        <option value="$PROJECT_DIR$/videos-dev/src/main/java/com/yefeng/InterceptorConfig.java" />
+        <option value="$PROJECT_DIR$/videos-dev-service/src/main/java/com/yefeng/impl/MultiFileServiceImpl.java" />
+        <option value="$PROJECT_DIR$/videos-dev-mapper/src/main/java/com/yefeng/mapper/VideoMapper.java" />
+        <option value="$PROJECT_DIR$/videos-dev-common/src/main/java/com/yefeng/util/FFMpegUtil.java" />
       </list>
     </option>
   </component>
@@ -188,7 +166,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -200,7 +178,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -221,7 +199,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -328,11 +306,22 @@
       <workItem from="1579412789552" duration="5211000" />
       <workItem from="1579771755579" duration="5551000" />
       <workItem from="1580011194882" duration="9034000" />
+      <workItem from="1580788088343" duration="10144000" />
+      <workItem from="1581047671450" duration="290000" />
+      <workItem from="1581050353922" duration="597000" />
     </task>
+    <task id="LOCAL-00001" summary="第二次上传">
+      <created>1580788388768</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1580788388768</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="169771000" />
+    <option name="totallyTimeSpent" value="180802000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -346,7 +335,43 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19829424" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20469083" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Spring" order="0" weight="0.32936078" />
+      <window_info anchor="bottom" id="Terminal" order="1" />
+      <window_info anchor="bottom" id="Docker" order="2" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="4" weight="0.37919825" />
+      <window_info anchor="bottom" id="Java Enterprise" order="5" />
+      <window_info anchor="bottom" id="Database Changes" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Message" order="8" />
+      <window_info anchor="bottom" id="Find" order="9" weight="0.38136512" />
+      <window_info anchor="bottom" id="Run" order="10" weight="0.2527115" />
+      <window_info anchor="bottom" id="Debug" order="11" weight="0.5932755" />
+      <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="14" weight="0.32936078" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" visible="true" weight="0.304371" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
+      <window_info anchor="right" id="Word Book" order="10" side_tool="true" weight="0.32995737" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20042644" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -380,84 +405,35 @@
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info anchor="right" id="Bean Validation" order="9" />
       <window_info anchor="right" id="Word Book" order="10" side_tool="true" weight="0.32995737" />
-    </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.30490404" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Spring" order="0" weight="0.32936078" />
-      <window_info anchor="bottom" id="Terminal" order="1" />
-      <window_info anchor="bottom" id="Docker" order="2" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="4" weight="0.45720476" />
-      <window_info anchor="bottom" id="Java Enterprise" order="5" />
-      <window_info anchor="bottom" id="Database Changes" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Message" order="8" />
-      <window_info anchor="bottom" id="Find" order="9" weight="0.38136512" />
-      <window_info anchor="bottom" id="Run" order="10" weight="0.13217768" />
-      <window_info active="true" anchor="bottom" id="Debug" order="11" visible="true" weight="0.27843988" />
-      <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="14" weight="0.32936078" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" weight="0.304371" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Database" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info anchor="right" id="Bean Validation" order="9" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="第二次上传" />
+    <option name="LAST_COMMIT_MESSAGE" value="第二次上传" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/videos-dev-common/src/main/java/com/yefeng/util/FFMpegUtil.java</url>
+          <line>26</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/videos-dev-service/src/main/java/com/yefeng/impl/MultiFileServiceImpl.java</url>
+          <line>124</line>
+          <properties />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/videos-dev/src/main/java/com/yefeng/WebMvcConfigurerConfig.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.5.RELEASE/spring-web-5.0.5.RELEASE.jar!/org/springframework/web/cors/reactive/UrlBasedCorsConfigurationSource.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="21" column="74" selection-start-line="21" selection-start-column="61" selection-end-line="21" selection-end-column="74" />
-          <folding>
-            <element signature="e#871#872#0" expanded="true" />
-            <element signature="e#921#922#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/videos-dev/src/main/java/com/yefeng/Swagger2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.0.5.RELEASE/spring-webmvc-5.0.5.RELEASE.jar!/org/springframework/web/servlet/config/annotation/InterceptorRegistry.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="23" column="35" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/videos-dev/src/main/java/com/yefeng/annotation/AuthTokenCheck.java" />
-    <entry file="file://$PROJECT_DIR$/videos-dev/src/main/java/com/yefeng/annotation/LoginUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/videos-dev/src/main/java/com/yefeng/UserLoginThreadLocal.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -512,26 +488,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/videos-dev/src/main/java/com/yefeng/interceptor/TokenInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="37" column="23" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/videos-dev-pojo/src/main/java/com/yefeng/dto/UserTokenDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="23" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/io/File.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -553,16 +509,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="117">
           <caret line="78" column="50" lean-forward="true" selection-start-line="78" selection-start-column="50" selection-end-line="78" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/videos-dev/src/main/java/com/yefeng/resolver/UserLoginArgumentResolver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -672,30 +618,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/videos-dev-api/src/main/resources/mapper/VideoMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="60" column="33" selection-start-line="60" selection-start-column="33" selection-end-line="60" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/videos-dev-mapper/src/main/java/com/yefeng/mapper/VideoMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="4" column="24" lean-forward="true" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/videos-dev/src/main/java/com/yefeng/InterceptorConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="34" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/videos-dev-common/src/main/java/com/yefeng/util/RedisUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -761,13 +683,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/videos-dev/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="12" column="45" lean-forward="true" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/videos-dev-service/src/main/java/com/yefeng/impl/BgmServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
@@ -792,16 +707,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/videos-dev-service/src/main/java/com/yefeng/impl/MultiFileServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="837">
-          <caret line="91" column="27" selection-start-line="91" selection-start-column="27" selection-end-line="91" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/util/logging/Logger.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
@@ -809,29 +714,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/videos-dev-common/src/main/java/com/yefeng/util/FFMpegUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="56" column="30" lean-forward="true" selection-start-line="56" selection-start-column="30" selection-end-line="56" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/videos-dev-service/src/main/java/com/yefeng/MultiFileService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/videos-dev-pojo/src/main/java/com/yefeng/pojo/Video.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
+        <state relative-caret-position="150">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -843,10 +728,145 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/swagger/swagger-annotations/1.5.9/swagger-annotations-1.5.9.jar!/io/swagger/annotations/ApiParam.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos-dev-pojo/src/main/java/com/yefeng/dto/ConverInputDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="6" column="7" lean-forward="true" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos-dev/src/main/java/com/yefeng/annotation/LoginUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos-dev-pojo/src/main/java/com/yefeng/dto/UserTokenDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="6" column="7" lean-forward="true" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos-dev/src/main/java/com/yefeng/InterceptorConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="36" column="52" selection-start-line="36" selection-start-column="52" selection-end-line="36" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos-dev/src/main/java/com/yefeng/resolver/UserLoginArgumentResolver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-54">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos-dev/src/main/java/com/yefeng/interceptor/TokenInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="878">
+          <caret line="37" column="23" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos-dev-api/src/main/resources/mapper/VideoMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="185" column="32" selection-start-line="185" selection-start-column="23" selection-end-line="185" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos-dev-api/target/classes/mapper/VideoMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="183" column="29" selection-start-line="183" selection-start-column="14" selection-end-line="183" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos-dev-mapper/src/main/java/com/yefeng/mapper/VideoMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="469">
+          <caret line="20" column="56" selection-start-line="20" selection-start-column="56" selection-end-line="20" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos-dev/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-234">
+          <caret line="12" column="45" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos-dev-service/src/main/java/com/yefeng/MultiFileService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="508">
+          <caret line="20" column="9" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos-dev-common/src/main/java/com/yefeng/util/FFMpegUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos-dev-service/src/main/java/com/yefeng/impl/MultiFileServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="137" selection-start-line="137" selection-end-line="137" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.0.5.RELEASE/spring-aop-5.0.5.RELEASE.jar!/org/springframework/aop/support/AopUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="707">
+          <caret line="189" selection-start-line="189" selection-end-line="189" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/videos-dev/src/main/java/com/yefeng/controller/VideoController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="807">
-          <caret line="48" column="38" lean-forward="true" selection-start-line="48" selection-start-column="38" selection-end-line="48" selection-end-column="38" />
+        <state relative-caret-position="510">
+          <caret line="66" column="34" selection-start-line="66" selection-start-column="34" selection-end-line="66" selection-end-column="34" />
         </state>
       </provider>
     </entry>

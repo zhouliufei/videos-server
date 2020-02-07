@@ -2,6 +2,9 @@ package com.yefeng.controller;
 
 import com.yefeng.BgmService;
 import com.yefeng.MultiFileService;
+import com.yefeng.annotation.LoginUser;
+import com.yefeng.dto.ConverInputDTO;
+import com.yefeng.dto.UserTokenDTO;
 import com.yefeng.pojo.Bgm;
 import com.yefeng.pojo.User;
 import com.yefeng.pojo.Video;
@@ -48,6 +51,26 @@ public class VideoController {
         }
         return JsonResult.ok(videoId);
     }
+
+    @ApiOperation(value = "上传封面",notes = "上传封面的接口")
+    @PostMapping("/uploadCover")
+    public JsonResult uploadCover(ConverInputDTO conver,
+                                  @LoginUser UserTokenDTO userToken,
+                                  @RequestParam("file") MultipartFile file) {
+        if(StringUtil.isEmpty(conver.getVideoId())) {
+            return JsonResult.errorMessage("未传入视频主键ID");
+        }
+        if(file == null) {
+            return JsonResult.errorMessage("上传失败，未选择文件");
+        }
+        try {
+            multiFileService.uploadCover(conver,userToken,file);
+            return JsonResult.ok();
+        } catch (IOException e) {
+            return JsonResult.errorMessage("封面上传失败");
+        }
+    }
+
 
 
 }

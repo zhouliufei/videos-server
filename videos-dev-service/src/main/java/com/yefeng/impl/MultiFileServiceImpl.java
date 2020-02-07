@@ -2,6 +2,8 @@ package com.yefeng.impl;
 
 import com.yefeng.BgmService;
 import com.yefeng.MultiFileService;
+import com.yefeng.dto.ConverInputDTO;
+import com.yefeng.dto.UserTokenDTO;
 import com.yefeng.mapper.UserMapper;
 import com.yefeng.mapper.VideoMapper;
 import com.yefeng.pojo.Bgm;
@@ -49,6 +51,9 @@ public class MultiFileServiceImpl implements MultiFileService {
         }
         files[0].transferTo(file);
         String faceUrl = userMapper.queryFaceUrl(userId);
+        if(StringUtil.isEmpty(faceUrl)) {
+            return uploadDB;
+        }
         String deleteFilePath = rootPath + faceUrl;
         if(!StringUtil.isEmpty(deleteFilePath)) {
             File deleteFile = new File(deleteFilePath);
@@ -103,5 +108,32 @@ public class MultiFileServiceImpl implements MultiFileService {
         video.setLikeCounts(0L);
         videoMapper.insertSelective(video);
         return videoId;
+    }
+
+    @Override
+    public void uploadCover(ConverInputDTO conver, UserTokenDTO userToken, MultipartFile file) throws IOException {
+        String fileName = file.getOriginalFilename();
+        //文件在数据库中保存的相对地址
+        String uploadDB = "/" + "094a3656-f21c-4963-a555-d61757ec4d06" + "/conver/" + fileName;
+        //文件最终保存的地址
+        String dest = rootPath + uploadDB;
+        File destFile = new File(dest);
+        if(!destFile.getParentFile().exists() || !destFile.getParentFile().isDirectory()) {
+            destFile.getParentFile().mkdirs();
+        }
+        file.transferTo(destFile);
+        String coverPath = videoMapper.queryCoverPath(conver.getVideoId());
+        //更新数据库中的数据记录
+        videoMapper.updateCoverPath(conver.getVideoId(),uploadDB);
+        if(StringUtil.isEmpty(coverPath)) {
+            return;
+        }
+        String deleteFilePath = rootPath + coverPath;
+        if(!StringUtil.isEmpty(deleteFilePath)) {
+            File deleteFile = new File(deleteFilePath);
+            if(deleteFile.exists()) {
+                deleteFile.delete();
+            }
+        }
     }
 }

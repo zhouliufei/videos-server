@@ -94,7 +94,7 @@ public class FFMpegUtil {
         ProcessBuilder builder = new ProcessBuilder(command);
         Process process = builder.start();
         try {
-//            releaseStream(process);
+           releaseStream(process);
         }catch (Exception e) {
             logger.error("ffmepg音频消音后资源释放报错" + e.getMessage());
         }
