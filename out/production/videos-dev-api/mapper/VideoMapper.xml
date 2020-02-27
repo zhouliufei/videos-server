@@ -18,11 +18,11 @@
     </constructor>
   </resultMap>
   <sql id="Base_Column_List" >
-    id, user_id, audio_id, video_desc, video_path, video_seconds, video_width, video_height, 
+    id, user_id, audio_id, video_desc, video_path, video_seconds, video_width, video_height,
     cover_path, like_counts, status, create_time
   </sql>
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
-    select 
+    select
     <include refid="Base_Column_List" />
     from videos
     where id = #{id,jdbcType=VARCHAR}
@@ -32,14 +32,14 @@
     where id = #{id,jdbcType=VARCHAR}
   </delete>
   <insert id="insert" parameterType="com.yefeng.pojo.Video" >
-    insert into videos (id, user_id, audio_id, 
-      video_desc, video_path, video_seconds, 
-      video_width, video_height, cover_path, 
+    insert into videos (id, user_id, audio_id,
+      video_desc, video_path, video_seconds,
+      video_width, video_height, cover_path,
       like_counts, status, create_time
       )
-    values (#{id,jdbcType=VARCHAR}, #{userId,jdbcType=VARCHAR}, #{audioId,jdbcType=VARCHAR}, 
-      #{videoDesc,jdbcType=VARCHAR}, #{videoPath,jdbcType=VARCHAR}, #{videoSeconds,jdbcType=REAL}, 
-      #{videoWidth,jdbcType=INTEGER}, #{videoHeight,jdbcType=INTEGER}, #{coverPath,jdbcType=VARCHAR}, 
+    values (#{id,jdbcType=VARCHAR}, #{userId,jdbcType=VARCHAR}, #{audioId,jdbcType=VARCHAR},
+      #{videoDesc,jdbcType=VARCHAR}, #{videoPath,jdbcType=VARCHAR}, #{videoSeconds,jdbcType=REAL},
+      #{videoWidth,jdbcType=INTEGER}, #{videoHeight,jdbcType=INTEGER}, #{coverPath,jdbcType=VARCHAR},
       #{likeCounts,jdbcType=BIGINT}, #{status,jdbcType=INTEGER}, #{createTime,jdbcType=TIMESTAMP}
       )
   </insert>
@@ -175,5 +175,45 @@
       status = #{status,jdbcType=INTEGER},
       create_time = #{createTime,jdbcType=TIMESTAMP}
     where id = #{id,jdbcType=VARCHAR}
+  </update>
+  <select id="queryCoverPath" parameterType="java.lang.String" resultType="java.lang.String">
+    select cover_path coverPath
+    from videos
+    WHERE id = #{videoId}
+  </select>
+  <update id="updateCoverPath">
+    update videos
+    set cover_path = #{coverPath}
+    where id = #{videoId}
+  </update>
+  <select id="queryHomePageList" resultType="com.yefeng.dto.HomePageDTO">
+    SELECT
+        u.face_image userFaceUrl,
+        v.cover_path videoCoverUrl,
+        v.video_path videoPath,
+        v.video_width videoWidth,
+        v.video_height videoHeight,
+        v.like_counts likeCounts,
+        u.id userId,
+        u.nickname nickName,
+        v.id
+    FROM
+        videos v
+        LEFT JOIN users u ON v.user_id = u.id
+    WHERE v.`status` = 1
+    <if test="desc != null and desc != ''">
+      and v.video_desc like '%${desc}%'
+    </if>
+    order by v.create_time asc
+  </select>
+  <update id="addLikeCount">
+    updata videos
+    SET like_counts = like_counts + 1
+    WHERE id = #{videoId}
+  </update>
+  <update id="reduceLikeCount">
+    updata videos
+    SET like_counts = IF( 1 > like_counts, 0, like_counts - 1 )
+    WHERE id = #{videoId}
   </update>
 </mapper>

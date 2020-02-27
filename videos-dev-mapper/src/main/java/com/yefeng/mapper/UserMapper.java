@@ -24,4 +24,8 @@ public interface UserMapper {
                  @Param("password") String password);
 
     String queryFaceUrl(String userId);
+
+    int addReceiveLikeCount(String userId);
+
+    int reduceReceiveLikeCount(String userId);
 }

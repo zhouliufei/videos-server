@@ -11,7 +11,7 @@
     id, content
   </sql>
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
-    select 
+    select
     <include refid="Base_Column_List" />
     from search_records
     where id = #{id,jdbcType=VARCHAR}
@@ -57,4 +57,15 @@
     set content = #{content,jdbcType=VARCHAR}
     where id = #{id,jdbcType=VARCHAR}
   </update>
+  <select id="queryHot" resultType="java.lang.String">
+    SELECT
+        content
+    FROM
+        search_records
+    GROUP BY
+        content
+    ORDER BY
+        count(content) desc
+    LIMIT 10
+  </select>
 </mapper>

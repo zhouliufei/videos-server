@@ -14,8 +14,10 @@ public class RedisConfigration {
     @Autowired
     public JedisPool jedisPool(@Qualifier("jedis.config") JedisPoolConfig config,
                                @Value("${jedis.pool.host}")String host,
-                               @Value("${jedis.pool.port}")int port) {
-        return new JedisPool(config, host, port);
+                               @Value("${jedis.pool.port}")int port,
+                               @Value("${jedis.pool.timeout}")int timeout,
+                               @Value("${jedis.pool.password}")String password) {
+        return new JedisPool(config, host, port,timeout,password);
     }
 
     @Bean(name= "jedis.config")

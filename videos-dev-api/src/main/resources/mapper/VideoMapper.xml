@@ -186,4 +186,34 @@
     set cover_path = #{coverPath}
     where id = #{videoId}
   </update>
+  <select id="queryHomePageList" resultType="com.yefeng.dto.HomePageDTO">
+    SELECT
+        u.face_image userFaceUrl,
+        v.cover_path videoCoverUrl,
+        v.video_path videoPath,
+        v.video_width videoWidth,
+        v.video_height videoHeight,
+        v.like_counts likeCounts,
+        u.id userId,
+        u.nickname nickName,
+        v.id
+    FROM
+        videos v
+        LEFT JOIN users u ON v.user_id = u.id
+    WHERE v.`status` = 1
+    <if test="desc != null and desc != ''">
+      and v.video_desc like '%${desc}%'
+    </if>
+    order by v.create_time asc
+  </select>
+  <update id="addLikeCount">
+    update videos
+    SET like_counts = like_counts + 1
+    WHERE id = #{videoId}
+  </update>
+  <update id="reduceLikeCount">
+    update videos
+    SET like_counts = IF( 1 > like_counts, 0, like_counts - 1 )
+    WHERE id = #{videoId}
+  </update>
 </mapper>

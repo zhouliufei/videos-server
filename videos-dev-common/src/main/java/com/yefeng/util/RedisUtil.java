@@ -28,6 +28,7 @@ public class RedisUtil {
                 jedis.setex(TOKEN_PREFIX +":"+ key,expire,value);
             }
         }catch (Exception e) {
+            e.printStackTrace();
             throw new Exception("新增redis数据出错");
         } finally {
             if(jedis != null) {

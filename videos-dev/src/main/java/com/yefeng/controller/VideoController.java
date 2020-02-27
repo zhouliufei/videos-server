@@ -1,12 +1,13 @@
 package com.yefeng.controller;
 
-import com.yefeng.BgmService;
 import com.yefeng.MultiFileService;
+import com.yefeng.UserLikeVideoService;
+import com.yefeng.UserService;
+import com.yefeng.VideoService;
 import com.yefeng.annotation.LoginUser;
 import com.yefeng.dto.ConverInputDTO;
+import com.yefeng.dto.UserLikeInputDTO;
 import com.yefeng.dto.UserTokenDTO;
-import com.yefeng.pojo.Bgm;
-import com.yefeng.pojo.User;
 import com.yefeng.pojo.Video;
 import com.yefeng.util.JsonResult;
 import com.yefeng.util.StringUtil;
@@ -30,6 +31,8 @@ public class VideoController {
 
     @Autowired
     private MultiFileService multiFileService;
+    @Autowired
+    private UserLikeVideoService userLikeVideoService;
 
     @ApiOperation(value = "上传视频",notes = "上传视频的接口")
     @PostMapping("/upload")
@@ -67,10 +70,49 @@ public class VideoController {
             multiFileService.uploadCover(conver,userToken,file);
             return JsonResult.ok();
         } catch (IOException e) {
+            e.printStackTrace();
             return JsonResult.errorMessage("封面上传失败");
         }
     }
 
+    @ApiOperation(value = "用户关注",notes = "用户关注的接口")
+    @PostMapping("/userLike")
+    public JsonResult userLike(@RequestBody UserLikeInputDTO userLikeDTO) {
+        try {
+            userLikeVideoService.userLikeVideos(userLikeDTO.getUserId(),
+                    userLikeDTO.getVideoId(),userLikeDTO.getVideoCreateId());
+            return JsonResult.ok();
+        }catch (Exception e) {
+            return JsonResult.errorMessage("用户关注失败");
+        }
 
 
+    }
+
+    @ApiOperation(value = "用户取消关注",notes = "用户取消关注的接口")
+        @PostMapping("/userUnLike")
+        public JsonResult userUnLike(@RequestBody UserLikeInputDTO userLikeDTO) {
+            try{
+                userLikeVideoService.userUnLikeVideos(userLikeDTO.getUserId(),
+                        userLikeDTO.getVideoId(),userLikeDTO.getVideoCreateId());
+                return JsonResult.ok();
+            }catch (Exception e) {
+                return JsonResult.errorMessage("用户取消关注失败");
+            }
+    }
+
+    @ApiOperation(value = "查询用户是否关注",notes = "查询用户是否关注的接口")
+    @GetMapping("/queryUserLikeStatus")
+    public JsonResult queryUserLikeStatus(@RequestBody UserLikeInputDTO userLikeDTO) {
+        try{
+            if(StringUtil.isEmpty(userLikeDTO.getUserId()) || StringUtil.isEmpty(userLikeDTO.getVideoId())
+                    || StringUtil.isEmpty(userLikeDTO.getVideoCreateId())) {
+                return JsonResult.errorMessage("参数不能为空");
+            }
+            return userLikeVideoService.queryUserLikeStatus(userLikeDTO.getUserId(),
+                    userLikeDTO.getVideoId(),userLikeDTO.getVideoCreateId());
+        }catch (Exception e) {
+            return JsonResult.errorMessage("用户取消关注失败");
+        }
+    }
 }

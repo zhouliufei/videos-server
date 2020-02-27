@@ -2,6 +2,8 @@ package com.yefeng.mapper;
 
 import com.yefeng.pojo.SearchRecord;
 
+import java.util.List;
+
 public interface SearchRecordMapper {
     int deleteByPrimaryKey(String id);
 
@@ -14,4 +16,6 @@ public interface SearchRecordMapper {
     int updateByPrimaryKeySelective(SearchRecord record);
 
     int updateByPrimaryKey(SearchRecord record);
+
+    List<String> queryHot();
 }

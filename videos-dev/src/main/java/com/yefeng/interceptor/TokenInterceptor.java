@@ -5,6 +5,7 @@ import com.yefeng.UserLoginThreadLocal;
 import com.yefeng.dto.UserTokenDTO;
 import com.yefeng.util.JsonResult;
 import com.yefeng.util.RedisUtil;
+import com.yefeng.util.StringUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.web.method.HandlerMethod;
@@ -22,24 +23,29 @@ public class TokenInterceptor implements HandlerInterceptor {
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
         String token = request.getHeader("token");
+        String userId = request.getHeader("userId");
         //如果不是映射到方法直接通过
         if (!(handler instanceof HandlerMethod)) {
             return true;
         }
-        if(token==null||token.equals("")){
-            printJson(response, "");
+        if(StringUtil.isEmpty(token) && StringUtil.isEmpty(userId)) {
+            printJson(response,"请重新登录..");
             return false;
         }
-        String userId = redisUtil.get(token);
-        if(userId == null || userId.trim().length() == 0) {
-            printJson(response,"");
+        //用户信息过期
+        String unToken = redisUtil.get(userId);
+        if(StringUtil.isEmpty(unToken)) {
+            printJson(response,"请重新登录..");
             return false;
         }
-        redisUtil.expireTime(userId);
-        redisUtil.expireTime(token);
-        UserTokenDTO userTokenDTO = new UserTokenDTO(userId,token);
-        UserLoginThreadLocal.set(userTokenDTO);
-        return true;
+        if(unToken.equals(token)) {
+            redisUtil.expireTime(userId);
+            redisUtil.expireTime(token);
+            UserTokenDTO userTokenDTO = new UserTokenDTO(userId,token);
+            UserLoginThreadLocal.set(userTokenDTO);
+            return true;
+        }
+        return false;
     }
 
     @Override
@@ -51,8 +57,8 @@ public class TokenInterceptor implements HandlerInterceptor {
         response.setHeader("Access-Control-Max-Age", "3600");
     }
 
-    private static void printJson(HttpServletResponse response, String code) {
-        JsonResult jsonResult = new JsonResult("token过期,请重新登陆",null,401);
+    private static void printJson(HttpServletResponse response, String msg) {
+        JsonResult jsonResult = new JsonResult(msg,null,401);
         String content = JSON.toJSONString(jsonResult);
         printContent(response, content);
     }
