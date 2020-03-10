@@ -2,48 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4903058e-d7b8-4225-a8e6-37d21265dffc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/videos-dev-common/src/main/java/com/yefeng/util/IntegerCommon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/videos-dev-common/src/main/java/com/yefeng/util/TimeAgoUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/videos-dev-pojo/src/main/java/com/yefeng/dto/CommentPageInputDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/videos-dev-pojo/src/main/java/com/yefeng/dto/CommentVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/videos-dev-pojo/src/main/java/com/yefeng/dto/FollowAuthorInputDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/videos-dev-pojo/src/main/java/com/yefeng/dto/MineDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/videos-dev-pojo/src/main/java/com/yefeng/dto/ShowLikeVideoInputDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/videos-dev-pojo/src/main/java/com/yefeng/dto/VideoVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/videos-dev-service/src/main/java/com/yefeng/CommentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/videos-dev-service/src/main/java/com/yefeng/impl/CommentServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/videos-dev/src/main/java/com/yefeng/controller/CommentController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/videos-dev-api/src/main/resources/mapper/CommentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/videos-dev-api/src/main/resources/mapper/CommentMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/videos-dev-api/src/main/resources/mapper/UserFanMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/videos-dev-api/src/main/resources/mapper/UserFanMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/videos-dev-api/src/main/resources/mapper/UserLikeVideoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/videos-dev-api/src/main/resources/mapper/UserLikeVideoMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/videos-dev-api/src/main/resources/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/videos-dev-api/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/videos-dev-api/src/main/resources/mapper/VideoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/videos-dev-api/src/main/resources/mapper/VideoMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/videos-dev-mapper/src/main/java/com/yefeng/mapper/CommentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/videos-dev-mapper/src/main/java/com/yefeng/mapper/CommentMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/videos-dev-mapper/src/main/java/com/yefeng/mapper/UserFanMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/videos-dev-mapper/src/main/java/com/yefeng/mapper/UserFanMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/videos-dev-mapper/src/main/java/com/yefeng/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/videos-dev-mapper/src/main/java/com/yefeng/mapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/videos-dev-mapper/src/main/java/com/yefeng/mapper/VideoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/videos-dev-mapper/src/main/java/com/yefeng/mapper/VideoMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/videos-dev-mapper/target/classes/com/yefeng/mapper/CommentMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/videos-dev-mapper/target/classes/com/yefeng/mapper/CommentMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/videos-dev-mapper/target/classes/com/yefeng/mapper/UserFanMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/videos-dev-mapper/target/classes/com/yefeng/mapper/UserFanMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/videos-dev-mapper/target/classes/com/yefeng/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/videos-dev-mapper/target/classes/com/yefeng/mapper/UserMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/videos-dev-mapper/target/classes/com/yefeng/mapper/VideoMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/videos-dev-mapper/target/classes/com/yefeng/mapper/VideoMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/videos-dev-pojo/src/main/java/com/yefeng/dto/HomePageDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/videos-dev-pojo/src/main/java/com/yefeng/dto/HomePageDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/videos-dev-pojo/src/main/java/com/yefeng/dto/VideoLikeDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/videos-dev-pojo/src/main/java/com/yefeng/dto/VideoLikeDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/videos-dev-pojo/src/main/java/com/yefeng/dto/VideoPageInputDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/videos-dev-pojo/src/main/java/com/yefeng/dto/VideoPageInputDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/videos-dev-pojo/src/main/java/com/yefeng/pojo/UserReport.java" beforeDir="false" afterPath="$PROJECT_DIR$/videos-dev-pojo/src/main/java/com/yefeng/pojo/UserReport.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/videos-dev-pojo/target/classes/com/yefeng/pojo/UserReport.class" beforeDir="false" afterPath="$PROJECT_DIR$/videos-dev-pojo/target/classes/com/yefeng/pojo/UserReport.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/videos-dev-service/src/main/java/com/yefeng/UserLikeVideoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/videos-dev-service/src/main/java/com/yefeng/UserLikeVideoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/videos-dev-service/src/main/java/com/yefeng/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/videos-dev-service/src/main/java/com/yefeng/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/videos-dev-service/src/main/java/com/yefeng/impl/HomePageServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/videos-dev-service/src/main/java/com/yefeng/impl/HomePageServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/videos-dev-service/src/main/java/com/yefeng/impl/MultiFileServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/videos-dev-service/src/main/java/com/yefeng/impl/MultiFileServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/videos-dev-service/src/main/java/com/yefeng/impl/UserLikeVideoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/videos-dev-service/src/main/java/com/yefeng/impl/UserLikeVideoServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/videos-dev-service/src/main/java/com/yefeng/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/videos-dev-service/src/main/java/com/yefeng/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/videos-dev-service/target/classes/com/yefeng/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/videos-dev-service/target/classes/com/yefeng/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/videos-dev-service/target/classes/com/yefeng/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/videos-dev-service/target/classes/com/yefeng/impl/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/videos-dev/src/main/java/com/yefeng/controller/HomePageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/videos-dev/src/main/java/com/yefeng/controller/HomePageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/videos-dev/src/main/java/com/yefeng/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/videos-dev/src/main/java/com/yefeng/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/videos-dev/src/main/java/com/yefeng/controller/VideoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/videos-dev/src/main/java/com/yefeng/controller/VideoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/videos-dev/target/classes/com/yefeng/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/videos-dev/target/classes/com/yefeng/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/videos-dev-pojo/src/main/java/com/yefeng/dto/CommentVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/videos-dev-pojo/src/main/java/com/yefeng/dto/CommentVO.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -168,10 +129,10 @@
         <option value="$PROJECT_DIR$/videos-dev-pojo/src/main/java/com/yefeng/pojo/Comment.java" />
         <option value="$PROJECT_DIR$/videos-dev-common/src/main/java/com/yefeng/util/TimeAgoUtils.java" />
         <option value="$PROJECT_DIR$/videos-dev-mapper/src/main/java/com/yefeng/mapper/CommentMapper.java" />
-        <option value="$PROJECT_DIR$/videos-dev-pojo/src/main/java/com/yefeng/dto/CommentVO.java" />
         <option value="$PROJECT_DIR$/videos-dev-service/src/main/java/com/yefeng/impl/CommentServiceImpl.java" />
         <option value="$PROJECT_DIR$/videos-dev-service/src/main/java/com/yefeng/CommentService.java" />
         <option value="$PROJECT_DIR$/videos-dev/src/main/java/com/yefeng/controller/CommentController.java" />
+        <option value="$PROJECT_DIR$/videos-dev-pojo/src/main/java/com/yefeng/dto/CommentVO.java" />
         <option value="$PROJECT_DIR$/videos-dev-api/src/main/resources/mapper/CommentMapper.xml" />
       </list>
     </option>
@@ -224,51 +185,6 @@
             <path>
               <item name="videos" type="b2602c69:ProjectViewProjectNode" />
               <item name="videos" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="videos" type="b2602c69:ProjectViewProjectNode" />
-              <item name="videos" type="462c0819:PsiDirectoryNode" />
-              <item name="videos-dev" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="videos" type="b2602c69:ProjectViewProjectNode" />
-              <item name="videos" type="462c0819:PsiDirectoryNode" />
-              <item name="videos-dev" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="videos" type="b2602c69:ProjectViewProjectNode" />
-              <item name="videos" type="462c0819:PsiDirectoryNode" />
-              <item name="videos-dev" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="videos" type="b2602c69:ProjectViewProjectNode" />
-              <item name="videos" type="462c0819:PsiDirectoryNode" />
-              <item name="videos-dev" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="videos" type="b2602c69:ProjectViewProjectNode" />
-              <item name="videos" type="462c0819:PsiDirectoryNode" />
-              <item name="videos-dev" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="yefeng" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="videos" type="b2602c69:ProjectViewProjectNode" />
-              <item name="videos" type="462c0819:PsiDirectoryNode" />
-              <item name="videos-dev" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="yefeng" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -425,7 +341,7 @@
       <workItem from="1583644352738" duration="19000" />
       <workItem from="1583644393368" duration="17367000" />
       <workItem from="1583816323090" duration="596000" />
-      <workItem from="1583817307403" duration="638000" />
+      <workItem from="1583817307403" duration="4188000" />
     </task>
     <task id="LOCAL-00001" summary="第二次上传">
       <created>1580788388768</created>
@@ -448,11 +364,18 @@
       <option name="project" value="LOCAL" />
       <updated>1582787809368</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="视频详情页面开发完毕">
+      <created>1583818086599</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1583818086599</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="318091000" />
+    <option name="totallyTimeSpent" value="321641000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -484,7 +407,7 @@
       <window_info anchor="bottom" id="Message" order="7" />
       <window_info anchor="bottom" id="Find" order="8" weight="0.38136512" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.329718" />
-      <window_info anchor="bottom" id="Run" order="10" weight="0.12581345" />
+      <window_info anchor="bottom" id="Run" order="10" visible="true" weight="0.24728851" />
       <window_info anchor="bottom" id="Debug" order="11" weight="0.41323212" />
       <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
@@ -545,7 +468,8 @@
     <MESSAGE value="第二次上传" />
     <MESSAGE value="第二次上传1" />
     <MESSAGE value="视频详情页开发完毕" />
-    <option name="LAST_COMMIT_MESSAGE" value="视频详情页开发完毕" />
+    <MESSAGE value="视频详情页面开发完毕" />
+    <option name="LAST_COMMIT_MESSAGE" value="视频详情页面开发完毕" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/out/production/videos-dev-api/mapper/VideoMapper.xml">
@@ -809,35 +733,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/videos-dev-pojo/src/main/java/com/yefeng/pojo/Comment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="24" selection-start-column="24" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/videos-dev-common/src/main/java/com/yefeng/util/TimeAgoUtils.java">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/videos-dev-pojo/src/main/java/com/yefeng/dto/CommentVO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/videos-dev/src/main/java/com/yefeng/controller/CommentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="26" column="54" selection-start-line="26" selection-start-column="54" selection-end-line="26" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/videos-dev-service/src/main/java/com/yefeng/CommentService.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -863,20 +760,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/videos-dev-api/src/main/resources/mapper/CommentMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="142" column="77" selection-start-line="142" selection-start-column="77" selection-end-line="142" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/videos-dev/src/main/java/com/yefeng/controller/VideoController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2790">
-          <caret line="113" column="48" selection-start-line="113" selection-start-column="48" selection-end-line="113" selection-end-column="48" />
         </state>
       </provider>
     </entry>
@@ -920,13 +803,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/videos-dev/src/main/java/com/yefeng/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2580">
-          <caret line="106" column="30" selection-start-line="106" selection-start-column="30" selection-end-line="106" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/videos-dev-service/src/main/java/com/yefeng/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="840">
@@ -961,6 +837,54 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="25" column="7" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos-dev-pojo/src/main/java/com/yefeng/dto/CommentVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="18" column="29" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos-dev-api/src/main/resources/mapper/CommentMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="153" column="38" selection-start-line="153" selection-start-column="38" selection-end-line="153" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos-dev/src/main/java/com/yefeng/controller/CommentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="26" column="54" selection-start-line="26" selection-start-column="54" selection-end-line="26" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos-dev/src/main/java/com/yefeng/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="605">
+          <caret line="106" column="30" selection-start-line="106" selection-start-column="30" selection-end-line="106" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos-dev-pojo/src/main/java/com/yefeng/pojo/Comment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="5" column="22" lean-forward="true" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videos-dev/src/main/java/com/yefeng/controller/VideoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="145" column="50" lean-forward="true" selection-start-line="145" selection-start-column="50" selection-end-line="145" selection-end-column="50" />
         </state>
       </provider>
     </entry>

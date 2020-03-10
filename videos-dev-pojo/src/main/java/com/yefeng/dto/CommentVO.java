@@ -13,4 +13,8 @@ public class CommentVO extends Comment {
     private String nickName;
 
     private String timeAgo;
+
+    private String toFaceImage;
+
+    private String toNickName;
 }

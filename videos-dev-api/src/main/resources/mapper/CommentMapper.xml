@@ -142,20 +142,29 @@
   </update>
   <select id="queryCommentList" parameterType="java.lang.String" resultType="com.yefeng.dto.CommentVO">
     SELECT
-        c.id id,
-        c.father_comment_id fatherCommentId,
-        c.to_user_id toUserId,
-        c.video_id videoId,
-        c.from_user_id fromUserId,
-        c.create_time createTime,
-        c.COMMENT comment,
-        u.face_image  faceImage,
-        u.nickname nickName
+        c.*,
+        u.face_image faceImage,
+        u.nickname nickName,
+        tu.face_image toFaceImage,
+        tu.nickname toNickName
     FROM
-        comments c
-	LEFT JOIN users u ON u.id = c.from_user_id
-    WHERE
-    c.video_id = #{videoId,jdbcType=VARCHAR}
-    order by c.create_time desc
+        (
+        SELECT
+            c.id id,
+            c.father_comment_id fatherCommentId,
+            c.to_user_id toUserId,
+            c.video_id videoId,
+            c.from_user_id fromUserId,
+            c.create_time createTime,
+            c.COMMENT comment
+        FROM
+            comments c
+        WHERE
+            c.video_id = #{videoId,jdbcType=VARCHAR}
+        ORDER BY
+            c.create_time DESC
+        ) c
+    LEFT JOIN users u ON u.id = c.fromUserId
+    LEFT JOIN users tu on tu.id = c.toUserId
   </select>
 </mapper>
