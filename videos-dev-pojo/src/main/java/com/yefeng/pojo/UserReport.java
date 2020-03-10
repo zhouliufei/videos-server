@@ -1,18 +1,19 @@
 package com.yefeng.pojo;
 
+import javax.validation.constraints.NotNull;
 import java.util.Date;
 
 public class UserReport {
     private String id;
-
+    @NotNull
     private String dealUserId;
-
+    @NotNull
     private String dealVideoId;
 
     private String title;
 
     private String content;
-
+    @NotNull
     private String userid;
 
     private Date createDate;

@@ -9,6 +9,7 @@ public class VideoPageInputDTO extends PageInputDTO {
 
     private Integer isSaveRecord;
     private String desc;
+    private String userId;
 
 }
 

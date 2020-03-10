@@ -25,4 +25,6 @@ public class HomePageDTO {
     private Integer videoHeight;
 
     private Long likeCounts;
+
+    private String videoDesc;
 }

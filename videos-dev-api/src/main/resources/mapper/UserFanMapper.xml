@@ -12,7 +12,7 @@
     id, user_id, fan_id
   </sql>
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
-    select 
+    select
     <include refid="Base_Column_List" />
     from users_fans
     where id = #{id,jdbcType=VARCHAR}
@@ -70,4 +70,16 @@
       fan_id = #{fanId,jdbcType=VARCHAR}
     where id = #{id,jdbcType=VARCHAR}
   </update>
+  <delete id="deleteByUserIdAndAuthorId">
+    delete from users_fans
+    where user_id = #{userId,jdbcType=VARCHAR}
+    and fan_id = #{fanId,jdbcType=VARCHAR}
+  </delete>
+  <select id="selectByUIdFId" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from users_fans
+    where user_id = #{userId,jdbcType=VARCHAR}
+    and fan_id = #{fanId,jdbcType=VARCHAR}
+  </select>
 </mapper>

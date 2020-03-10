@@ -114,6 +114,7 @@ public class MultiFileServiceImpl implements MultiFileService {
     public void uploadCover(ConverInputDTO conver, UserTokenDTO userToken, MultipartFile file) throws IOException {
         String fileName = file.getOriginalFilename();
         //文件在数据库中保存的相对地址
+        //TODO 需要改变的UserId
         String uploadDB = "/" + "094a3656-f21c-4963-a555-d61757ec4d06" + "/conver/" + fileName;
         //文件最终保存的地址
         String dest = rootPath + uploadDB;

@@ -12,6 +12,7 @@ import io.swagger.annotations.ApiOperation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -32,7 +33,7 @@ public class HomePageController {
      */
     @ApiOperation(value = "获取首页列表",notes = "获取首页列表的接口")
     @GetMapping("/queryHomePageList")
-    public JsonResult queryHomePageList(VideoPageInputDTO pageInput) {
+    public JsonResult queryHomePageList(@Validated VideoPageInputDTO pageInput) {
         return JsonResult.ok(homePageService.queryHomePageList(pageInput));
     }
 

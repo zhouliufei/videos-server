@@ -29,6 +29,7 @@ public class HomePageServiceImpl implements HomePageService {
     @Transactional(propagation = Propagation.REQUIRED)
     public PageResult queryHomePageList(VideoPageInputDTO pageInput) {
         String desc = pageInput.getDesc();
+        String userId = pageInput.getUserId();
         if(pageInput.getIsSaveRecord() != null && pageInput.getIsSaveRecord() == 1) {
             SearchRecord searchRecord = new SearchRecord();
             searchRecord.setId(UUID.randomUUID().toString());
@@ -37,7 +38,7 @@ public class HomePageServiceImpl implements HomePageService {
         }
         PageHelper.startPage(pageInput.getPage(),pageInput.getPageSize());
         PageResult pageResult = new PageResult();
-        List<HomePageDTO> list = videoMapper.queryHomePageList(desc);
+        List<HomePageDTO> list = videoMapper.queryHomePageList(desc,userId);
         PageInfo<HomePageDTO> pageInfo = new PageInfo<>(list);
         pageResult.setPage(pageInput.getPage());
         pageResult.setTotal(pageInfo.getPages());

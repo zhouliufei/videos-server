@@ -3,6 +3,8 @@ package com.yefeng.mapper;
 import com.yefeng.pojo.User;
 import org.apache.ibatis.annotations.Param;
 
+import java.util.List;
+
 public interface UserMapper {
     int deleteByPrimaryKey(String id);
 
@@ -28,4 +30,15 @@ public interface UserMapper {
     int addReceiveLikeCount(String userId);
 
     int reduceReceiveLikeCount(String userId);
+
+    int addFansCount(String userId);
+
+    int reduceFansCount(String userId);
+
+    int addFollowCount(String userId);
+
+    int reduceFollowCount(String userId);
+
+    List<User> queryUserList(@Param("page") int page,
+                             @Param("pageSize") int pageSize);
 }

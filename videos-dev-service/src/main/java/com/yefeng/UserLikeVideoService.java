@@ -1,7 +1,7 @@
 package com.yefeng;
 
-import com.yefeng.dto.UserLikeInputDTO;
-import com.yefeng.pojo.UserLikeVideo;
+import com.yefeng.dto.PageResult;
+import com.yefeng.dto.ShowLikeVideoInputDTO;
 import com.yefeng.util.JsonResult;
 
 public interface UserLikeVideoService {
@@ -22,4 +22,14 @@ public interface UserLikeVideoService {
      * @return
      */
     JsonResult queryUserLikeStatus(String loginUserId, String videoId, String publishId);
+
+    /**
+     * 查询用户收藏视频的接口
+     */
+    PageResult queryLikeVideo(ShowLikeVideoInputDTO showLikeVideoDTO);
+
+    /**
+     * 展示用户关注者发布的视频
+     */
+    PageResult queryFollowVideo(ShowLikeVideoInputDTO showLikeVideoDTO);
 }

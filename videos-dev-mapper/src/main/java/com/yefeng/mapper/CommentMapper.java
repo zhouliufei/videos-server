@@ -1,6 +1,9 @@
 package com.yefeng.mapper;
 
+import com.yefeng.dto.CommentVO;
 import com.yefeng.pojo.Comment;
+
+import java.util.List;
 
 public interface CommentMapper {
     int deleteByPrimaryKey(String id);
@@ -16,4 +19,6 @@ public interface CommentMapper {
     int updateByPrimaryKeyWithBLOBs(Comment record);
 
     int updateByPrimaryKey(Comment record);
+
+    List<CommentVO> queryCommentList(String videoId);
 }

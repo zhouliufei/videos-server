@@ -80,8 +80,9 @@
        and  video_id = #{videoId,jdbcType=VARCHAR}
      </if>
   </delete>
-  <select id="queryUserLikeStatus" resultType="java.lang.Integer">
-    select * from users_like_videos
+  <select id="queryUserLikeStatus" resultMap="BaseResultMap">
+    select <include refid="Base_Column_List" />
+    from users_like_videos
     WHERE user_id = #{loginUserId}
     AND video_id = #{videoId}
   </select>

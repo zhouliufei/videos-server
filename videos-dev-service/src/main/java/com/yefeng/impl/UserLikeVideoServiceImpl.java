@@ -1,8 +1,13 @@
 package com.yefeng.impl;
 
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import com.yefeng.UserLikeVideoService;
 import com.yefeng.UserService;
+import com.yefeng.dto.PageResult;
+import com.yefeng.dto.ShowLikeVideoInputDTO;
 import com.yefeng.dto.VideoLikeDTO;
+import com.yefeng.dto.VideoVO;
 import com.yefeng.mapper.UserLikeVideoMapper;
 import com.yefeng.mapper.UserMapper;
 import com.yefeng.mapper.VideoMapper;
@@ -15,6 +20,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
 import java.util.UUID;
 
 @Service
@@ -61,7 +67,7 @@ public class UserLikeVideoServiceImpl implements UserLikeVideoService {
     @Override
     @Transactional(propagation = Propagation.SUPPORTS)
     public JsonResult queryUserLikeStatus(String loginUserId, String videoId, String publishId) {
-        User publisher = userService.queryUserInfo(publishId);
+        User publisher = userService.queryUserInfo(publishId,"");
         if(publisher == null) {
             return JsonResult.errorMessage("视频发布者不存在");
         }
@@ -74,5 +80,34 @@ public class UserLikeVideoServiceImpl implements UserLikeVideoService {
         }
         videoLikeDTO.setUserLikeVideo(userLikeVideo);
         return JsonResult.ok(videoLikeDTO);
+    }
+
+    @Override
+    @Transactional(propagation = Propagation.SUPPORTS)
+    public PageResult queryLikeVideo(ShowLikeVideoInputDTO showLikeVideoDTO) {
+        PageHelper.startPage(showLikeVideoDTO.getPage(),showLikeVideoDTO.getPageSize());
+        List<VideoVO> videoVOList = videoMapper.queryLikeVideo(showLikeVideoDTO.getUserId());
+        PageInfo<VideoVO> pageList = new PageInfo<>(videoVOList);
+
+        PageResult pageResult = new PageResult();
+        pageResult.setTotal(pageList.getPages());
+        pageResult.setRows(videoVOList);
+        pageResult.setPage(showLikeVideoDTO.getPage());
+        pageResult.setRecords(pageList.getTotal());
+        return pageResult;
+    }
+
+    @Override
+    @Transactional(propagation = Propagation.SUPPORTS)
+    public PageResult queryFollowVideo(ShowLikeVideoInputDTO showLikeVideoDTO) {
+        PageHelper.startPage(showLikeVideoDTO.getPage(),showLikeVideoDTO.getPageSize());
+        List<VideoVO> videoVoList = videoMapper.queryFollowVideo(showLikeVideoDTO.getUserId());
+        PageInfo<VideoVO> pageList = new PageInfo<>(videoVoList);
+        PageResult pageResult = new PageResult();
+        pageResult.setTotal(pageList.getPages());
+        pageResult.setRows(videoVoList);
+        pageResult.setPage(showLikeVideoDTO.getPage());
+        pageResult.setRecords(pageList.getTotal());
+        return pageResult;
     }
 }

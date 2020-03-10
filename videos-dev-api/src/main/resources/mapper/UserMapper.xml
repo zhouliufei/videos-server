@@ -151,4 +151,36 @@
     update users set receive_like_counts = if(1 > receive_like_counts,0,receive_like_counts - 1)
     where id = #{userId}
   </update>
+
+  <update id="addFansCount" parameterType="java.lang.String">
+    update users set fans_counts = fans_counts + 1
+    where id = #{userId}
+  </update>
+  <update id="reduceFansCount" parameterType="java.lang.String">
+    update users set fans_counts = if(1 > fans_counts,0,fans_counts - 1)
+    where id = #{userId}
+  </update>
+
+  <update id="addFollowCount" parameterType="java.lang.String">
+    update users set follow_counts = follow_counts + 1
+    where id = #{userId}
+  </update>
+  <update id="reduceFollowCount" parameterType="java.lang.String">
+    update users set follow_counts = if(1 > follow_counts,0,follow_counts - 1)
+    where id = #{userId}
+  </update>
+  <select id="queryUserList" resultMap="BaseResultMap">
+    SELECT
+    *
+    FROM
+    czb_user cu
+    LEFT JOIN czb_address ca ON ca.user_id = cu.user_id
+    LEFT JOIN czb_user_role cur ON cur.user_id = cu.user_id
+    LEFT JOIN czb_petrol_sales_records cpsr on cpsr.buyer_id = cu.user_id
+    left join czb_consumption_record ccr on ccr.user_id = cu.user_id
+    where cu.is_vip = true
+    and cu.is_deleted = false
+    and cu.is_login_pc = true
+    and  100  > ccr.money
+  </select>
 </mapper>
